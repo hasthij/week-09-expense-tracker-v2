@@ -1,0 +1,18 @@
+
+
+<html> 
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>register</title>
+    </head>
+    <body>
+            <form method="post" action="{{ url_for('login') }}">
+            <input name="username" placeholder="username"><br>
+            <input name="password" type="password" placeholder="password"><br>
+            <button>Log in</button>
+            </form>
+            <form action="{{ url_for('register') }}" method="get">
+            <button type="submit">Create User</button>
+        </form>
+    </body> 
+</html>
