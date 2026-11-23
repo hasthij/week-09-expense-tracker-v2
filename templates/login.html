@@ -14,5 +14,9 @@
             <form action="{{ url_for('register') }}" method="get">
             <button type="submit">Create User</button>
         </form>
+        <hr>
+        <a href="{{ url_for('login_google') }}">
+            <button type="button">Log in with Google</button>
+        </a>
     </body> 
 </html>
